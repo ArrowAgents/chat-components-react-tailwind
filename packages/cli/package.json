@@ -1,12 +1,12 @@
 {
   "name": "chat-components-shadcn-cli",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "bin": {
     "chat-components-shadcn-cli": "./dist/index.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node scripts/createRegistryJson.js && tsc",
     "dev": "node dist/index.js"
   },
   "keywords": [],

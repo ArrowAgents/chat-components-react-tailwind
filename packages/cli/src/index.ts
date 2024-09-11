@@ -5,7 +5,7 @@ import { add } from "./commands/add.js";
 const program = new Command();
 
 program
-  .name("shadcn-chat-cli")
+  .name("chat-components-shadcn-cli")
   .description("CLI for adding chat components to your project")
   .version("0.2.0");
 

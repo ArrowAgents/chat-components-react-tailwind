@@ -42,7 +42,9 @@
                     "contentFile": "components/expandable-chat.tsx"
                 }
             ]
-        },
+        }
+    ],
+    "hiddenComponents": [
         {
             "name": "message-loading",
             "dependencies": [],

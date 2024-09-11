@@ -10,25 +10,34 @@ function readFileContent(filePath) {
   return fs.readFileSync(filePath, 'utf8');
 }
 
-// Process each component
-const components = registryBuilder.components.map(component => {
-  const processedFiles = component.files.map(file => {
-    const contentFilePath = path.join(__dirname, '..', 'assets', file.contentFile);
+// Function to process components
+function processComponents(components) {
+  return components.map(component => {
+    const processedFiles = component.files.map(file => {
+      const contentFilePath = path.join(__dirname, '..', 'assets', file.contentFile);
+      return {
+        name: file.name,
+        content: readFileContent(contentFilePath)
+      };
+    });
+
     return {
-      name: file.name,
-      content: readFileContent(contentFilePath)
+      ...component,
+      files: processedFiles
     };
   });
+}
 
-  return {
-    ...component,
-    files: processedFiles
-  };
-});
+// Process regular components
+const components = processComponents(registryBuilder.components);
+
+// Process hidden components
+const hiddenComponents = processComponents(registryBuilder.hiddenComponents);
 
 // Create the final registry object
 const registry = {
-  components: components
+  components: components,
+  hiddenComponents: hiddenComponents
 };
 
 // Write the registry.json file

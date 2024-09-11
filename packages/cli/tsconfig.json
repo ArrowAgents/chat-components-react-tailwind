@@ -12,10 +12,10 @@
     },
     "include": [
       "src/**/*"
-, "assets/components"    ],
+    ],
     "exclude": [
       "node_modules",
-      "src/registry/registrybuilder.json",
-      "src/"
+      "assets",
+      "src/registry/registrybuilder.json"
     ]
   }
