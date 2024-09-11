@@ -16,14 +16,14 @@ export const router = createBrowserRouter([
                 path: "",
                 element: <Dashboard />,
             },
-            {
-                path: "sample",
-                element: <Sample />,
-            },
-            {
-                path: "empty",
-                element: <Empty />,
-            },
+            // {
+            //     path: "sample",
+            //     element: <Sample />,
+            // },
+            // {
+            //     path: "empty",
+            //     element: <Empty />,
+            // },
         ],
     },
     {
