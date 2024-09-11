@@ -8,7 +8,7 @@
             "files": [
                 {
                     "name": "chat-bubble.tsx",
-                    "contentFile": "components/chat-bubble.tsx"
+                    "contentFile": "chat/chat-bubble.tsx"
                 }
             ],
             "type": "components:ui"
@@ -19,7 +19,7 @@
             "files": [
                 {
                     "name": "chat-input.tsx",
-                    "contentFile": "components/chat-input.tsx"
+                    "contentFile": "chat/chat-input.tsx"
                 }
             ]
         },
@@ -29,7 +29,7 @@
             "files": [
                 {
                     "name": "chat-message-list.tsx",
-                    "contentFile": "components/chat-message-list.tsx"
+                    "contentFile": "chat/chat-message-list.tsx"
                 }
             ]
         },
@@ -39,7 +39,7 @@
             "files": [
                 {
                     "name": "expandable-chat.tsx",
-                    "contentFile": "components/expandable-chat.tsx"
+                    "contentFile": "chat/expandable-chat.tsx"
                 }
             ]
         }
@@ -51,7 +51,7 @@
             "files": [
                 {
                     "name": "message-loading.tsx",
-                    "contentFile": "components/message-loading.tsx"
+                    "contentFile": "chat/message-loading.tsx"
                 }
             ],
             "type": "components:ui"

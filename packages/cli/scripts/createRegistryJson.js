@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Read the registrybuilder.json file
-const registryBuilderPath = path.join(__dirname, '..', 'assets', 'regsitrybuilder.json');
+const registryBuilderPath = path.join(__dirname, 'regsitrybuilder.json');
 const registryBuilder = JSON.parse(fs.readFileSync(registryBuilderPath, 'utf8'));
 
 // Function to read file content
@@ -14,7 +14,7 @@ function readFileContent(filePath) {
 function processComponents(components) {
   return components.map(component => {
     const processedFiles = component.files.map(file => {
-      const contentFilePath = path.join(__dirname, '..', 'assets', file.contentFile);
+      const contentFilePath = path.join(__dirname, '..', '..', '..', 'templates', 'basic', 'src', 'components', 'ui',  file.contentFile);
       return {
         name: file.name,
         content: readFileContent(contentFilePath)
