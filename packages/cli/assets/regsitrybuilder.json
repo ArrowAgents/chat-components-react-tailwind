@@ -1,0 +1,58 @@
+{
+    "components": [
+        {
+            "name": "chat-bubble",
+            "dependencies": [
+                "message-loading"
+            ],
+            "files": [
+                {
+                    "name": "chat-bubble.tsx",
+                    "contentFile": "components/chat-bubble.tsx"
+                }
+            ],
+            "type": "components:ui"
+        },
+        {
+            "name": "chat-input",
+            "dependencies": [],
+            "files": [
+                {
+                    "name": "chat-input.tsx",
+                    "contentFile": "components/chat-input.tsx"
+                }
+            ]
+        },
+        {
+            "name": "chat-message-list",
+            "dependencies": [],
+            "files": [
+                {
+                    "name": "chat-message-list.tsx",
+                    "contentFile": "components/chat-message-list.tsx"
+                }
+            ]
+        },
+        {
+            "name": "expandable-chat",
+            "dependencies": [],
+            "files": [
+                {
+                    "name": "expandable-chat.tsx",
+                    "contentFile": "components/expandable-chat.tsx"
+                }
+            ]
+        },
+        {
+            "name": "message-loading",
+            "dependencies": [],
+            "files": [
+                {
+                    "name": "message-loading.tsx",
+                    "contentFile": "components/message-loading.tsx"
+                }
+            ],
+            "type": "components:ui"
+        }
+    ]
+}

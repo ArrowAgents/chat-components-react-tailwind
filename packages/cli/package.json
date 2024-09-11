@@ -1,0 +1,27 @@
+{
+  "name": "chat-components-shadcn-cli",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "bin": {
+    "chat-components-shadcn-cli": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@inquirer/prompts": "^5.5.0",
+    "chalk": "^4.1.2",
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0",
+    "nanospinner": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.5.4"
+  }
+}

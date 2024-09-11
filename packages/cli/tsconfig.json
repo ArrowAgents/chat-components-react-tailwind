@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "ES2018",
+      "module": "CommonJS",
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "strict": true,
+      "esModuleInterop": true,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "jsx": "react"
+    },
+    "include": [
+      "src/**/*"
+, "assets/components"    ],
+    "exclude": [
+      "node_modules",
+      "src/registry/registrybuilder.json",
+      "src/"
+    ]
+  }
